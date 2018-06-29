@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>
+Abbott Solutions Group
+</title>
+<style>
+body
+{
+  background-color:#eee
+}
+.alltiles
+{
+    position: absolute;
+	top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);}
+
+.wrap
+{
+  margin:50px auto 0 auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1920px;
+}
+
+.tile
+{
+  width:420px;
+  height:240px;
+  margin:10px;
+  background-color:#d4d4d6;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:#878787;
+  font-family:'Roboto';
+}
+
+.tile img
+{
+  height:80%;
+  width:90%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+
+.tile .text
+{
+/*   z-index:99; */
+  color=#000000;
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+  height:calc(100% - 60px);
+}
+.tile h1
+{
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.tile h2
+{
+  font-weight:100;
+  margin:20px 0 0 0;
+  font-style:italic;
+   transform: translateX(200px);
+}
+.tile p
+{
+  font-weight:300;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+.tile:hover
+{
+   /*  background-color:#14bc17;  */
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+.tile:hover img
+{
+  opacity: 0.2;
+}
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+.dots
+{
+  position:absolute;
+  bottom:20px;
+  right:30px;
+  margin: 0 auto;
+  width:30px;
+  height:30px;
+  color:currentColor;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  
+}
+
+.dots span
+{
+    width: 5px;
+    height:5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display:block;
+  opacity:0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+ 
+}
+
+.tile:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+.dots span:nth-child(1)
+{
+   transition-delay: 0.05s;
+}
+.dots span:nth-child(2)
+{
+   transition-delay: 0.1s;
+}
+.dots span:nth-child(3)
+{
+   transition-delay: 0.15s;
+}
+
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+
+.container {
+    position: relative;
+}
+
+.Headercenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.footer {
+ position:fixed;
+ bottom:0;
+ left:0;
+}
+
+/*
+		.Abbotttext {
+		  background-color: green;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+
+		.CPAKtext {
+		  background-color: blue;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+
+		.PresProptext {
+		  background-color: red;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+
+		.Adminitortext {
+		  background-color: teal;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+*/
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img style="max-height:150px;" src="133Main.jpeg" alt="133Main" width="1000" height="200">
+  <div class="Headercenter"><img style="max-height:100px;width:200px" src="ASG_main_trans.png" alt="ASG Main Image"></div>
+</div>
+
+<div class="alltiles">
+
+<div class="wrap">
+<a href="http://www.abbottllc.com">
+<div class="tile">
+  <img src='AbbottLLC_logo_trans.png'/>
+  <div class="text">
+  <h1 class="animate-text">Accounting and Tax Services</h1>
+  <p class="animate-text">Financial Statements, Compilations and Reviews; Accounts Receivable; Bill Pay; Payroll; Tax Services: Corporate, Estate/Trust, Individual, Non-Profit, International, State/Local, Specialty and Payroll</p>
+   <div class="dots">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+ </div>
+</a>
+
+<a href="http://www.cpaksolutions.com">
+<div class="tile"> 
+  <img src='CPAK_logo.png'/>
+  <div class="text">
+  <h2 class="animate-text">Technology Solutions Provider and Consulting</h1>
+  <p class="animate-text">MSP and VAR services including Lenovo, HPE, Cisco, VMWare, Toshiba and others.</p>
+<div class="dots">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </div>
+ </div>
+</a>
+
+</div>
+
+<a href="PresProp.html"> 
+<div class="wrap">
+  <div class="tile"> 
+  <img src='PresProp_logo_trans.png'/>
+  <div class="text">
+  <h1 class="animate-text">Preservation Properties Bio..</h1>
+  <p class="animate-text">Office space located in beautiful download LaGrange</p>
+<div class="dots">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </div>
+ </div>
+</a>
+ 
+ <a href="http://www.adminitor.com">
+ <div class="tile"> 
+  <img src='Adminator_logo.png'/>
+  <div class="text">
+  <h1 class="animate-text">Time and Payroll Solutions</h1>
+  <p class="animate-text">Timeclock and Workforce Management; </p>
+<div class="dots">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </div>
+ </div>
+ </a>
+</div>
+</div>
+</body>
+</html>
+
